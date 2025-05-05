@@ -11,5 +11,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-# 1. Checkout the code using actions/checkout
-# 2. Run bandit using tj-actions bandit
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Run bandit
+        uses: tj-actions/bandit@v5.1
