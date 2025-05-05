@@ -12,7 +12,10 @@ jobs:
 
     steps:
 
+        - uses: actions/checkout@v4
+
 # 1. Checkout the code
 # 2. Instal docker buildx  docker/setup-buildx-action@v3
 # 3. Build the docker image
 # 4. Scan with trivy the built image
+
